@@ -1,0 +1,18 @@
+@each $day in $days {
+  #{$calendarName}-#{$day} div:first-child {
+    $counter: $counter + 1;
+    margin-left: ($blockWidth * $counter) + $spaceBetweenBlocks*($counter+1);
+  }
+}
+
+@for $i from 1 through 31 {
+  #{$calendarName} div:nth-child(#{$i})::after {
+    content: "#{$i}";
+  }
+}
+
+@for $i from  28 through 31 {
+  #{$calendarName}-#{$i} div:nth-child(-n+#{$i}) {
+    visibility: visible;
+  }
+}

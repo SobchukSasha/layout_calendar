@@ -1,0 +1,25 @@
+.calendar {
+  position: relative;
+  display: flex;
+  width: 7 * $blockWidth;
+  flex-wrap: wrap;
+  
+  & > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: $blockWidth;
+    height: $blockHeight;
+    margin: $spaceBetweenBlocks * 0.5;
+    border: 1px solid black;
+    background-color: #eee;
+    visibility: hidden;
+    transition: 1s linear;
+  }
+
+  & > div:hover {
+    top: -20px;
+  }
+}

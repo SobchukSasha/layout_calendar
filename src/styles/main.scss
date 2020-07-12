@@ -1,3 +1,18 @@
+$blockHeight: 100px;
+$blockWidth: 100px;
+$spaceBetweenBlocks: 1px;
+$days: "mon", "tue", "wed", "thu", "fri", "sat";
+$counter: 0;
+$calendarName: ".calendar";
+
+html {
+  font-family: Arial, sans-serif;
+  font-style: 30px;
+}
+
 body {
   margin: 0;
 }
+
+@import "calendar";
+@import "cycles";
