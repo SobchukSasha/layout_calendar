@@ -1,7 +1,8 @@
 .calendar {
   position: relative;
   display: flex;
-  width: 7 * $blockWidth;
+  margin: auto;
+  width: 7 * $blockWidth + 8 * $spaceBetweenBlocks;
   flex-wrap: wrap;
   
   & > div {
@@ -16,7 +17,7 @@
     border: 1px solid black;
     background-color: #eee;
     visibility: hidden;
-    transition: 1s ease-in-out;
+    transition: 1s linear;
   }
 
   & > div:hover {

@@ -1,7 +1,7 @@
 @each $day in $days {
   #{$calendarName}-#{$day} div:first-child {
-    $counter: $counter + 1;
     margin-left: ($blockWidth * $counter) + $spaceBetweenBlocks*($counter+1);
+    $counter: $counter + 1;
   }
 }
 
